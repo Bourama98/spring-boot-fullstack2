@@ -99,25 +99,25 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-<!--				<executions>-->
-<!--					<execution>-->
-<!--						<id>pre-integration-test</id>-->
-<!--						<goals>-->
-<!--							<goal>start</goal>-->
-<!--						</goals>-->
-<!--						<configuration>-->
-<!--							<arguments>-->
-<!--								<argument>&#45;&#45;server.port=${tomcat.http.port}</argument>-->
-<!--							</arguments>-->
-<!--						</configuration>-->
-<!--					</execution>-->
-<!--					<execution>-->
-<!--						<id>post-integration-test</id>-->
-<!--						<goals>-->
-<!--							<goal>stop</goal>-->
-<!--						</goals>-->
-<!--					</execution>-->
-<!--				</executions>-->
+				<executions>
+					<execution>
+						<id>pre-integration-test</id>
+						<goals>
+							<goal>start</goal>
+						</goals>
+						<configuration>
+							<arguments>
+								<argument>--server.port=${tomcat.http.port}</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					<execution>
+						<id>post-integration-test</id>
+						<goals>
+							<goal>stop</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 			<!-- Added the plugins below to remove mockito error message -->
 <!--			<plugin>-->
