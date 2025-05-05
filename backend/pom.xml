@@ -6,23 +6,25 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.4.5</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/> <!-- lookup parent from a repository -->
 	</parent>
 	<groupId>com.amigoscode</groupId>
 	<artifactId>amigoscode-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<organization>
-		<name>mangara2023</name>
-		<url>https://amigoscode.com</url>
-	</organization>
+<!--	<organization>-->
+<!--		<name>mangara2023</name>-->
+<!--		<url>https://amigoscode.com</url>-->
+<!--	</organization>-->
 	<name>spring-boot.example</name>
 	<description>Demo project for Spring Boot</description>
+
 	<properties>
-		<maven.compiler.source>23</maven.compiler.source>
-		<maven.compiler.target>23</maven.compiler.target>
+		<maven.compiler.source>21</maven.compiler.source>
+		<maven.compiler.target>21</maven.compiler.target>
 <!--		<java.version>23</java.version>-->
 		<docker.username>mangara2023</docker.username>
 	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.postgresql</groupId>
@@ -64,26 +66,27 @@
 
 		<dependency>
 			<groupId>org.testcontainers</groupId>
-			<artifactId>testcontainers</artifactId>
-			<version>1.20.6</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.testcontainers</groupId>
 			<artifactId>junit-jupiter</artifactId>
 			<version>1.20.4</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.testcontainers</groupId>
+			<artifactId>testcontainers</artifactId>
+			<version>1.20.6</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.testcontainers</groupId>
 			<artifactId>postgresql</artifactId>
-			<version>1.17.6</version>
+			<version>1.20.4</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-core</artifactId>
-			<version>5.15.2</version>
+
 			<scope>test</scope>
 
 		</dependency>
@@ -187,7 +190,7 @@
 				<version>3.4.5</version>
 				<configuration>
 					<from>
-						<image>eclipse-temurin:23-jdk-ubi9-minimal</image>
+						<image>eclipse-temurin:21</image>
 						<platforms>
 							<platform>
 								<architecture>arm64</architecture>
