@@ -11,16 +11,16 @@
 	<groupId>com.amigoscode</groupId>
 	<artifactId>amigoscode-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-<!--	<organization>-->
-<!--		<name>mangara2023</name>-->
-<!--		<url>https://amigoscode.com</url>-->
-<!--	</organization>-->
+	<organization>
+		<name>mangara2023</name>
+		<url>https://amigoscode.com</url>
+	</organization>
 	<name>spring-boot.example</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
-		<maven.compiler.source>21</maven.compiler.source>
-		<maven.compiler.target>21</maven.compiler.target>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
 <!--		<java.version>23</java.version>-->
 		<docker.username>mangara2023</docker.username>
 	</properties>
@@ -192,7 +192,7 @@
 				<version>3.4.1</version>
 				<configuration>
 					<from>
-						<image>eclipse-temurin:21</image>
+						<image>eclipse-temurin:17</image>
 						<platforms>
 							<platform>
 								<architecture>arm64</architecture>
