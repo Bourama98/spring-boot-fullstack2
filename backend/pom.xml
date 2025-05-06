@@ -19,6 +19,7 @@
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
+<!--I updated Java version to 24 in both pom.xml and backen-ci.yml file-->
 		<maven.compiler.source>24</maven.compiler.source>
 		<maven.compiler.target>24</maven.compiler.target>
 <!--		<java.version>23</java.version>-->
