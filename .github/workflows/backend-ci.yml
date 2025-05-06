@@ -1,13 +1,11 @@
 name: CI - Build Backend
 
-
 on:
   pull_request:
     branches:
       - main
     paths:
       - backend/**
-
 
 jobs:
   build:
@@ -20,7 +18,7 @@ jobs:
           POSTGRES_PASSWORD: password
           POSTGRES_DB: customer
         ports:
-          - 5332:5432
+          - 5432:5432
         options: >-
           --health-cmd pg_isready
           --health-interval 10s
@@ -34,7 +32,7 @@ jobs:
       - uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
-          java-version: '23'
+          java-version: '24'
           cache: 'maven'
 
 
