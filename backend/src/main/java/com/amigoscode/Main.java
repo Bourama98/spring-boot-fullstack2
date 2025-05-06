@@ -19,7 +19,7 @@ public class Main {
     public static void main(String[] args) {
 
         SpringApplication.run(Main.class, args);
-        //Test
+        //Test merging branch
         System.out.println("Testing");
     }
     @Bean
