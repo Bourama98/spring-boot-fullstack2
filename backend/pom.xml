@@ -19,8 +19,8 @@
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
-		<maven.compiler.source>17</maven.compiler.source>
-		<maven.compiler.target>17</maven.compiler.target>
+		<maven.compiler.source>24</maven.compiler.source>
+		<maven.compiler.target>24</maven.compiler.target>
 <!--		<java.version>23</java.version>-->
 		<docker.username>mangara2023</docker.username>
 	</properties>
@@ -192,7 +192,7 @@
 				<version>3.4.1</version>
 				<configuration>
 					<from>
-						<image>eclipse-temurin:17</image>
+						<image>eclipse-temurin:24</image>
 						<platforms>
 							<platform>
 								<architecture>arm64</architecture>
